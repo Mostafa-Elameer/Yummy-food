@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="imges/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-black">
+
+
+  <div class="d-none loding text-center d-flex justify-content-center align-items-center">
+    <span class="loader"></span>
+
+  </div>
+  <!---- NavBar -->
+  <div class="side-nav">
+    <div class="side-nav-inner p-3 bg-black text-white  position-relative">
+      <div class="profile mb-5 text-center">
+        <h1>Yummy</h1>
+      </div>
+      <ul class="list-unstyled mb-0 overflow-hidden">
+
+        <li id="searchLink" class="search rounded-2 py-2 mb-2">
+          <i class="fa-solid fa-magnifying-glass me-3"></i><span class="fs-5 ">Search</span>
+        </li>
+
+        <li id="categoriesLink" class="categories rounded-2 py-2 mb-2">
+          <i class="fa-solid fa-layer-group me-3"></i><span class="fs-5">Categories</span>
+        </li>
+
+        <li id="areaLink" class=" Area rounded-2 py-2 mb-2">
+          <i class="fa-solid fa-earth-americas me-3"></i><span class="fs-5">Area</span>
+        </li>
+
+        <li id="ingredientsLink" class="ingredients rounded-2 py-2">
+          <i class="fa-solid fa-burger me-3"></i><span class="fs-5">Ingredients</span>
+        </li>
+
+        <li id="contactUs" class="rounded-2 py-2">
+          <i class="fa-solid fa-share-nodes me-3"></i><span class="fs-5">Contact us</span>
+        </li>
+
+      </ul>
+
+      <div class="nav-footer position-absolute bottom-0 mb-3">
+        <div class="icons">
+          <i class="fa-brands fa-facebook me-1"></i>
+          <i class="fa-brands fa-x-twitter me-1"></i>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="footer">
+          <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu" class="rounded-end-4 bg-body-secondary">
+      <img id="menuLogo" src="imges/logo.png" alt="logo" />
+      <i id="openIcon" class="menuIcon fa-solid fa-bars fa-2x"></i>
+      <i id="closeIcon" class="menuIcon fa-solid fa-xmark fa-2x"></i>
+      <div id="contactIcon" class="text-center fs-5">
+        <i class="fa-solid fa-globe mb-2"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <main>
+    <!----- section Search ----->
+    <section id="search" class="d-none search bg-black">
+      <div class="container">
+        <header class="inputs-search py-4">
+          <div class="row row-cols-md-2">
+            <div><input id="searchName" class="form-control bg-white " type="text" placeholder="Search by Name"></div>
+            <div><input id="searchFirstLetter" class="form-control bg-white " type="text"
+                placeholder="Search by First Letter"></div>
+          </div>
+        </header>
+        <div class="container-fluid">
+          <div id="showData" class="row row-cols-lg-4 row-cols-md-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- section Category ----->
+    <section id="category" class="d-none category d-none bg-black">
+      <div class="container">
+        <div class="container-fluid">
+          <div id="showCategory" class="row row-cols-lg-3 row-cols-md-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- section Area ----->
+    <section id="Area" class="d-none Area d-none  bg-black">
+      <div class="container">
+        <div class="container-fluid">
+          <div id="showArea" class="row row-cols-lg-3 row-cols-sm-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- section ingreadint ----->
+    <section id="ingreadint" class="d-none ingreadint d-none  bg-black">
+      <div class="container">
+        <div class="container-fluid">
+          <div id="showingreadint" class="row row-cols-lg-3 row-cols-sm-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!----- section Contact US ----->
+    <section id="contactUs"  class="d-none contactUs bg-black d-flex justify-content-center align-items-center vh-100">
+      <div class="container ">
+        <form class="row row-cols-md-2 g-4 container">
+          <div class=""><input id="nameInput" data-validiton="Name" class="form-control input-form S-imput" type="text"
+              placeholder="Enter your Name"></div>
+          <div class=""><input id="emailInput" data-validiton="Email" class="form-control input-form S-imput"
+              type="text" placeholder="Enter your Email"></div>
+          <div class=""><input id="phoneInput" data-validiton="Phone" class="form-control input-form S-imput"
+              type="text" placeholder="Enter your Phone"></div>
+          <div class=""><input id="ageInput" data-validiton="Age" class="form-control input-form S-imput" type="text"
+              placeholder="Enter your Age"></div>
+          <div class=""><input id="passwordInput" data-validiton="Password" class="form-control input-form S-imput"
+              type="text" placeholder="Enter your Password"></div>
+          <div class=""><input id="passwordInput" data-validiton="RePassword" class="form-control input-form S-imput"
+              type="text" placeholder="RePassword"></div>
+          <div class="text-center w-100"><button id="submitBtn"
+              class="btn btn-outline-danger w-75 disabled ">submit</button></div>
+        </form>
+        <div>
+        </div>
+      </div>
+    </section>
+
+    <!-- detilse -->
+    <section id="detilse" class="d-none detilse text-white border p-5 ">
+    </section>
+    <!----- section home  ----->
+    <section class="home">
+      <div class="container">
+        <div id="showHome" class="row row-cols-lg-4 row-cols-md-2">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- script -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
